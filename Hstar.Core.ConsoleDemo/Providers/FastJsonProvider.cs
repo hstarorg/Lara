@@ -8,7 +8,7 @@ namespace Hstar.Core.ConsoleDemo.Providers
     {
         public string Serialize(object obj, string datetimeFormat = null)
         {
-            return JSON.ToJSON(obj, new JSONParameters { UseUTCDateTime = true, UseExtensions = false });
+            return JSON.ToJSON(obj, new JSONParameters { UseUTCDateTime = true, UseExtensions = false, EnableAnonymousTypes =true});
         }
 
         public T Deserialize<T>(string jsonString)

@@ -28,7 +28,6 @@ namespace Hstar.Core.ConsoleDemo
 
             //Json
             JsonSerializerHelper.SetJsonProvider(new FastJsonProvider());
-            //FastJSON不支持匿名类型
             ss = test1.TestJson();
             Console.WriteLine(ss);
             Console.ReadKey();
