@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Hstar.Core.Serializer
+﻿namespace Hstar.Core.Serializer
 {
-    interface IJsonSerializerProvider
+    public interface IJsonSerializerProvider
     {
+        string Serialize(object obj,string datetimeFormat=null);
+
+        T Deserialize<T>(string jsonString);
     }
 }
