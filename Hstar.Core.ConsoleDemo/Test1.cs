@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Hstar.Core.Serializer;
 
 namespace Hstar.Core.ConsoleDemo
 {
@@ -10,6 +8,11 @@ namespace Hstar.Core.ConsoleDemo
         public string GetTest()
         {
             return "ioc test";
+        }
+
+        public string TestJson()
+        {
+            return JsonSerializerHelper.Serialize(new {Name = "Jay", Date = DateTime.Now});
         }
     }
 }
