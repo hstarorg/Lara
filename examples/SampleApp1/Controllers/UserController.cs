@@ -17,6 +17,10 @@ namespace SampleApp1.Controllers
         {
             this.userBiz = userBiz;
         }
+        /// <summary>
+        /// Get username.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet, Route("username")]
         public async Task<object> GetUserNameAsync()
         {

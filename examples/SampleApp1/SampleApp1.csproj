@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.1\SampleApp1.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
@@ -14,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Hstar.Lara.DI\Hstar.Lara.DI.csproj" />
+    <ProjectReference Include="..\..\src\Hstar.Lara.Swagger\Hstar.Lara.Swagger.csproj" />
   </ItemGroup>
 
 </Project>

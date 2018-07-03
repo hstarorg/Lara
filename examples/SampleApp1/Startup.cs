@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Hstar.Lara.Swagger;
 
 namespace SampleApp1
 {
@@ -26,6 +27,7 @@ namespace SampleApp1
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSwagger(new ApiInfo { Name = "SampleApp1", Version = "v1",  Description = "测试APP" }, true);
             return services.ToAutofacProvider();
         }
 
@@ -37,6 +39,8 @@ namespace SampleApp1
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(c => c.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader().AllowCredentials());
+            app.UseSwaggerAndUI();
             app.UseMvc();
         }
     }
