@@ -8,25 +8,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{27D771A3-5
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Swagger", "src\Hstar.Lara.Swagger\Hstar.Lara.Swagger.csproj", "{CED3F643-BDA8-4B3E-952C-1F3D27C2EB76}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Cache", "src\Hstar.Lara.Cache\Hstar.Lara.Cache.csproj", "{160269FD-A145-4B7C-8C0B-3E6E8B3B27CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.Swagger", "src\Hstar.Lara.Swagger\Hstar.Lara.Swagger.csproj", "{CED3F643-BDA8-4B3E-952C-1F3D27C2EB76}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{A8160750-2AF5-42B0-B6E5-89E2908E1C93}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7937493D-0A86-45E2-B223-43CD0C010F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Cache.Tests", "test\Hstar.Lara.Cache.Tests\Hstar.Lara.Cache.Tests.csproj", "{F2D99B52-7053-4875-8FEB-E3640347E6AB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.DI", "src\Hstar.Lara.DI\Hstar.Lara.DI.csproj", "{2EE19172-D13D-444C-9505-5203881B121D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.DI", "src\Hstar.Lara.DI\Hstar.Lara.DI.csproj", "{2EE19172-D13D-444C-9505-5203881B121D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.Mail", "src\Hstar.Lara.Mail\Hstar.Lara.Mail.csproj", "{2047F488-110B-4A8A-90F7-AFC7C8880324}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.WebAPI.Extensions", "src\Hstar.Lara.WebAPI.Extensions\Hstar.Lara.WebAPI.Extensions.csproj", "{BA275929-90F4-44F3-92F8-A301C7702073}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Utilities", "src\Hstar.Lara.Utilities\Hstar.Lara.Utilities.csproj", "{65AF4B19-A2B0-4979-9665-F2BBE6BFAAF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.Utilities", "src\Hstar.Lara.Utilities\Hstar.Lara.Utilities.csproj", "{65AF4B19-A2B0-4979-9665-F2BBE6BFAAF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp1", "examples\SampleApp1\SampleApp1.csproj", "{8A4AC8E3-E0A2-4971-A7A3-22BF03FAC0D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp1", "examples\SampleApp1\SampleApp1.csproj", "{8A4AC8E3-E0A2-4971-A7A3-22BF03FAC0D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Utilities.Tests", "test\Hstar.Lara.Utilities.Tests\Hstar.Lara.Utilities.Tests.csproj", "{C37E1813-77F1-44CC-8898-C1834FF792A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Cache.Tests", "test\Hstar.Lara.Cache.Tests\Hstar.Lara.Cache.Tests.csproj", "{9DC7D24A-C41D-419E-A490-2FD4212A0724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Cache", "src\Hstar.Lara.Cache\Hstar.Lara.Cache.csproj", "{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,14 +40,6 @@ Global
 		{CED3F643-BDA8-4B3E-952C-1F3D27C2EB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CED3F643-BDA8-4B3E-952C-1F3D27C2EB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CED3F643-BDA8-4B3E-952C-1F3D27C2EB76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{160269FD-A145-4B7C-8C0B-3E6E8B3B27CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{160269FD-A145-4B7C-8C0B-3E6E8B3B27CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{160269FD-A145-4B7C-8C0B-3E6E8B3B27CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{160269FD-A145-4B7C-8C0B-3E6E8B3B27CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2D99B52-7053-4875-8FEB-E3640347E6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2D99B52-7053-4875-8FEB-E3640347E6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2D99B52-7053-4875-8FEB-E3640347E6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2D99B52-7053-4875-8FEB-E3640347E6AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2EE19172-D13D-444C-9505-5203881B121D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2EE19172-D13D-444C-9505-5203881B121D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EE19172-D13D-444C-9505-5203881B121D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -66,13 +60,26 @@ Global
 		{8A4AC8E3-E0A2-4971-A7A3-22BF03FAC0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A4AC8E3-E0A2-4971-A7A3-22BF03FAC0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A4AC8E3-E0A2-4971-A7A3-22BF03FAC0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37E1813-77F1-44CC-8898-C1834FF792A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37E1813-77F1-44CC-8898-C1834FF792A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37E1813-77F1-44CC-8898-C1834FF792A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37E1813-77F1-44CC-8898-C1834FF792A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC7D24A-C41D-419E-A490-2FD4212A0724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC7D24A-C41D-419E-A490-2FD4212A0724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC7D24A-C41D-419E-A490-2FD4212A0724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC7D24A-C41D-419E-A490-2FD4212A0724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F2D99B52-7053-4875-8FEB-E3640347E6AB} = {7937493D-0A86-45E2-B223-43CD0C010F00}
 		{8A4AC8E3-E0A2-4971-A7A3-22BF03FAC0D2} = {A8160750-2AF5-42B0-B6E5-89E2908E1C93}
+		{C37E1813-77F1-44CC-8898-C1834FF792A1} = {7937493D-0A86-45E2-B223-43CD0C010F00}
+		{9DC7D24A-C41D-419E-A490-2FD4212A0724} = {7937493D-0A86-45E2-B223-43CD0C010F00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {423C4D9C-1129-490B-9A29-67CCBC0A09E0}
