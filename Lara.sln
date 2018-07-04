@@ -26,9 +26,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp1", "examples\Samp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Utilities.Tests", "test\Hstar.Lara.Utilities.Tests\Hstar.Lara.Utilities.Tests.csproj", "{C37E1813-77F1-44CC-8898-C1834FF792A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Cache.Tests", "test\Hstar.Lara.Cache.Tests\Hstar.Lara.Cache.Tests.csproj", "{9DC7D24A-C41D-419E-A490-2FD4212A0724}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.Cache.Tests", "test\Hstar.Lara.Cache.Tests\Hstar.Lara.Cache.Tests.csproj", "{9DC7D24A-C41D-419E-A490-2FD4212A0724}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Cache", "src\Hstar.Lara.Cache\Hstar.Lara.Cache.csproj", "{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.Cache", "src\Hstar.Lara.Cache\Hstar.Lara.Cache.csproj", "{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Mail.Tests", "test\Hstar.Lara.Mail.Tests\Hstar.Lara.Mail.Tests.csproj", "{515DE749-B394-4700-BB96-101D4BD9BD36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +74,10 @@ Global
 		{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED98C8C-2D43-4BB8-B0DE-4BE0CCE0F6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515DE749-B394-4700-BB96-101D4BD9BD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515DE749-B394-4700-BB96-101D4BD9BD36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515DE749-B394-4700-BB96-101D4BD9BD36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515DE749-B394-4700-BB96-101D4BD9BD36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{8A4AC8E3-E0A2-4971-A7A3-22BF03FAC0D2} = {A8160750-2AF5-42B0-B6E5-89E2908E1C93}
 		{C37E1813-77F1-44CC-8898-C1834FF792A1} = {7937493D-0A86-45E2-B223-43CD0C010F00}
 		{9DC7D24A-C41D-419E-A490-2FD4212A0724} = {7937493D-0A86-45E2-B223-43CD0C010F00}
+		{515DE749-B394-4700-BB96-101D4BD9BD36} = {7937493D-0A86-45E2-B223-43CD0C010F00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {423C4D9C-1129-490B-9A29-67CCBC0A09E0}
