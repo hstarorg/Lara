@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Hstar.Lara.DI\Hstar.Lara.DI.csproj" />
     <ProjectReference Include="..\..\src\Hstar.Lara.Swagger\Hstar.Lara.Swagger.csproj" />
+    <ProjectReference Include="..\..\src\Hstar.Lara.WebAPI.Extensions\Hstar.Lara.WebAPI.Extensions.csproj" />
   </ItemGroup>
 
 </Project>
