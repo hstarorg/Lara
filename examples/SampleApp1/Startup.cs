@@ -37,18 +37,21 @@ namespace SampleApp1
             //{
             //    app.UseDeveloperExceptionPage();
             //}
+            var corsPolicy = new Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy();
+            corsPolicy.Origins.Add("*");
             app.UseSimpleExceptionHandler(env, exHandlerPathFeature =>
             {
                 if (exHandlerPathFeature.Error is BusinessException bizEx)
                 {
-                    return new ObjectResult(new {
+                    return new ObjectResult(new
+                    {
                         StatusCode = bizEx.StatusCode,
                         bizEx.Message,
                         StackTrace = env.IsDevelopment() ? bizEx.StackTrace : null
                     });
                 }
                 return null;
-            });
+            }, corsPolicy);
 
             app.UseCors(c => c.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader().AllowCredentials());
             app.UseSwaggerAndUI();
