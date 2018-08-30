@@ -14,6 +14,7 @@ Major.Minor.Build.Revision
 ## Features
 
 * Hstar.Lara.Cache
+* Hstar.Lara.Data
 * Hstar.Lara.DI
 * Hstar.Lara.Mail
 * Hstar.Lara.Swagger
