@@ -13,7 +13,7 @@ namespace Hstar.Lara.Utilities.Security
         /// <param name="key">HMACSHA256的KEY</param>
         /// <param name="encoding"></param>
         /// <returns></returns>
-        public static string ToHMACSHA256String(this string str, string key, Encoding encoding = null)
+        public static string ComputeHMACSHA256Hash(this string str, string key, Encoding encoding = null)
         {
             encoding = encoding ?? Encoding.UTF8;
             var hash = new HMACSHA256(encoding.GetBytes(key));
