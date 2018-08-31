@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Reflection;
-using System.Text;
 using System.Linq;
+using System.Reflection;
 
 namespace Hstar.Lara.Utilities.Common
 {

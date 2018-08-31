@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Hstar.Lara.DI;
+﻿using Hstar.Lara.DI;
+using Hstar.Lara.Swagger;
+using Hstar.Lara.WebAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Hstar.Lara.Swagger;
-using Hstar.Lara.WebAPI.Extensions;
 using SampleApp1.Models;
+using System;
 
 namespace SampleApp1
 {

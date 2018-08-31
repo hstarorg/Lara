@@ -7,6 +7,7 @@ namespace Hstar.Lara.Cache
     public static class SimpleMemoryCache
     {
         private static MemoryCache memoryCache;
+
         static SimpleMemoryCache()
         {
             memoryCache = new MemoryCache(new MemoryCacheOptions { });

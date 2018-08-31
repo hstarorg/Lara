@@ -8,6 +8,7 @@ namespace Hstar.Lara.Cache
     {
         private readonly ICacheEntry cacheEntry;
         private readonly Func<Task<T>> updateFunc;
+
         public CacheItem(ICacheEntry cacheEntry, Func<Task<T>> updateFunc)
         {
             this.cacheEntry = cacheEntry;

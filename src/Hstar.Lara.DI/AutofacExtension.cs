@@ -13,4 +13,3 @@ namespace Hstar.Lara.DI
         }
     }
 }
-

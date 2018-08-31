@@ -1,5 +1,4 @@
-﻿using System;
-using System.Net;
+﻿using System.Net;
 using System.Net.Mail;
 using System.Text;
 
@@ -19,7 +18,6 @@ namespace Hstar.Lara.Mail
                 IsBodyHtml = true
             };
             await smtpClient.SendMailAsync(message);
-
         }
     }
 }

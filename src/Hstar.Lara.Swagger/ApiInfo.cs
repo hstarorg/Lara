@@ -1,9 +1,4 @@
-﻿using Swashbuckle.AspNetCore.Swagger;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hstar.Lara.Swagger
+﻿namespace Hstar.Lara.Swagger
 {
     public class ApiInfo
     {
