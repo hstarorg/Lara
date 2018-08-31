@@ -1,12 +1,9 @@
-﻿namespace Hstar.Lara.Pay.Tenpay.Models
-{
-    public class RefundOrderParams
-    {
-        /// <summary>
-        /// 签名类型
-        /// </summary>
-        public WechatSignType SignType { get; set; } = WechatSignType.MD5;
+﻿using Hstar.Lara.Pay.Tenpay.Enums;
 
+namespace Hstar.Lara.Pay.Tenpay.Params
+{
+    public class RefundOrderParams : BaseParams
+    {
         /// <summary>
         /// 退款货币种类
         /// </summary>

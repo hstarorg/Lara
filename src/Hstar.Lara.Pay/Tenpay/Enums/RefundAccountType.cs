@@ -1,4 +1,4 @@
-﻿namespace Hstar.Lara.Pay.Tenpay.Models
+﻿namespace Hstar.Lara.Pay.Tenpay.Enums
 {
     /// <summary>
     /// 仅针对老资金流商户使用

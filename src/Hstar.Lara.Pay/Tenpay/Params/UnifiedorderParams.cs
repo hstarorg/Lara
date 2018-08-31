@@ -1,10 +1,10 @@
-﻿namespace Hstar.Lara.Pay.Tenpay.Models
+﻿using Hstar.Lara.Pay.Tenpay.Enums;
+
+namespace Hstar.Lara.Pay.Tenpay.Params
 {
-    public class UnifiedorderParams
+    public class UnifiedorderParams : BaseParams
     {
         public string DeviceInfo { get; set; }
-
-        public WechatSignType SignType { get; set; }
 
         public string Detail { get; set; }
 

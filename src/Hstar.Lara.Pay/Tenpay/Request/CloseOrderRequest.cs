@@ -1,4 +1,4 @@
-﻿namespace Hstar.Lara.Pay.Tenpay.Models
+﻿namespace Hstar.Lara.Pay.Tenpay.Request
 {
     public class CloseOrderRequest : BaseWechatRequest
     {

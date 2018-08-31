@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hstar.Lara.Pay.Tenpay.Models
+﻿namespace Hstar.Lara.Pay.Tenpay.Enums
 {
     public enum WechatBillType
     {

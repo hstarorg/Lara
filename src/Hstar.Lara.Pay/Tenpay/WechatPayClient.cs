@@ -1,4 +1,5 @@
-﻿using Hstar.Lara.Pay.Tenpay.Models;
+﻿using Hstar.Lara.Pay.Tenpay.Enums;
+using Hstar.Lara.Pay.Tenpay.Params;
 using System;
 
 namespace Hstar.Lara.Pay.Tenpay
@@ -41,7 +42,7 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="spbillCreateIP">用户端实际ip</param>
         /// <param name="tradeType">支付类型</param>
         /// <param name="optionalParams">可选的支付参数</param>
-        public void Unifiedorder(string nonceStr, string sign, string body, string outTradeNO, int totalFee, string spbillCreateIP, WechatTradeType tradeType, UnifiedorderParams optionalParams = null)
+        public void Unifiedorder(string sign, string body, string outTradeNO, int totalFee, string spbillCreateIP, WechatTradeType tradeType, UnifiedorderParams optionalParams = null)
         {
 
         }
@@ -56,7 +57,7 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="sign">签名</param>
         /// <param name="orderNumber">订单号（微信的订单号、商户系统内部的订单号二选一）</param>
         /// <param name="isOutTradeNO">是否是商家订单号，默认false</param>
-        public void QueryOrder(string nonceStr, string sign, string orderNumber, bool isOutTradeNO = false)
+        public void QueryOrder(string sign, string orderNumber, bool isOutTradeNO = false)
         {
         }
 

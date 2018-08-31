@@ -1,9 +1,7 @@
-﻿namespace Hstar.Lara.Pay.Tenpay.Models
+﻿namespace Hstar.Lara.Pay.Tenpay.Params
 {
-    public class QueryRefundParams
+    public class QueryRefundParams : BaseParams
     {
-        public WechatSignType SignType { get; set; } = WechatSignType.MD5;
-
         /// <summary>
         /// 偏移量，当部分退款次数超过10次时可使用，表示返回的查询结果从这个偏移量开始取记录
         /// </summary>

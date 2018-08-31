@@ -1,4 +1,4 @@
-﻿namespace Hstar.Lara.Pay.Tenpay.Models
+﻿namespace Hstar.Lara.Pay.Tenpay.Enums
 {
     /// <summary>
     /// 订单号类型
