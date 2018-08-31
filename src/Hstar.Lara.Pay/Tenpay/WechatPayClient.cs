@@ -1,10 +1,13 @@
 ﻿using Hstar.Lara.Pay.Tenpay.Models;
+using System;
 
 namespace Hstar.Lara.Pay.Tenpay
 {
     public class WechatPayClient
     {
         private readonly WechatPaySettings settings;
+
+        const string WechatPayApiHost = "https://api.mch.weixin.qq.com";
 
         /// <summary>
         /// 构造函数
@@ -26,7 +29,7 @@ namespace Hstar.Lara.Pay.Tenpay
             };
         }
         /// <summary>
-        /// 统一下单（商户系统先调用该接口在微信支付服务后台生成预支付交易单，返回正确的预支付交易会话标识后再在APP里面调起支付。）
+        /// 统一下单
         /// 接口链接：https://api.mch.weixin.qq.com/pay/unifiedorder
         /// 不需要证书
         /// </summary>
@@ -44,7 +47,8 @@ namespace Hstar.Lara.Pay.Tenpay
         }
 
         /// <summary>
-        /// 查询订单（提供所有微信支付订单的查询，商户可以通过该接口主动查询订单状态，完成下一步的业务逻辑）
+        /// 查询订单
+        /// 提供所有微信支付订单的查询，商户可以通过该接口主动查询订单状态，完成下一步的业务逻辑
         /// 接口链接：https://api.mch.weixin.qq.com/pay/orderquery
         /// 不需要证书
         /// </summary>
@@ -63,24 +67,55 @@ namespace Hstar.Lara.Pay.Tenpay
         /// </summary>
         /// <param name="nonceStr">随机字符串，不长于32位。</param>
         /// <param name="sign">签名</param>
-        /// <param name="outTradeNO"></param>
-        public void CloseOrder(string nonceStr, string sign, string outTradeNO)
+        /// <param name="outTradeNO">商户自定义订单ID</param>
+        /// <param name="optionalParams">可选配置参数</param>
+        public void CloseOrder(string nonceStr, string sign, string outTradeNO, CloseOrderParams optionalParams = null)
         {
 
         }
 
-
-        public void QueryRefund(string nonceStr, string sign)
+        /// <summary>
+        /// 查询退款
+        /// 提交退款申请后，通过调用该接口查询退款状态。退款有一定延时，用零钱支付的退款20分钟内到账，银行卡支付的退款3个工作日后重新查询退款状态。
+        /// 接口链接：https://api.mch.weixin.qq.com/pay/refundquery
+        /// 不需要证书
+        /// </summary>
+        /// <param name="nonceStr">随机字符串，不长于32位。</param>
+        /// <param name="sign">签名</param>
+        /// <param name="orderNumberType">订单号类型</param>
+        /// <param name="orderNumber">订单号</param>
+        /// <param name="optionalParams">可选配置参数</param>
+        public void QueryRefund(string nonceStr, string sign, OrderNumberType orderNumberType, string orderNumber, QueryRefundParams optionalParams = null)
         {
 
         }
 
-        public void DownloadBill()
+        /// <summary>
+        /// 下载对账单
+        /// 商户可以通过该接口下载历史交易清单。比如掉单、系统错误等导致商户侧和微信侧数据不一致，通过对账单核对后可校正支付状态。
+        /// 接口链接：https://api.mch.weixin.qq.com/pay/downloadbill
+        /// 不需要证书
+        /// </summary>
+        /// <param name="nonceStr">随机字符串，不长于32位。</param>
+        /// <param name="sign">签名</param>
+        /// <param name="billDate">对账单日期</param>
+        /// <param name="billType">账单类型</param>
+        /// <param name="optionalParams">可选配置参数</param>
+        public void DownloadBill(string nonceStr, string sign, DateTime billDate, WechatBillType billType = WechatBillType.ALL, DownloadBillParams optionalParams = null)
         {
 
         }
 
-        public void BatchQueryOrderComment()
+        /// <summary>
+        /// 拉取订单评价数据
+        /// </summary>
+        /// <param name="nonceStr">随机字符串，不长于32位。</param>
+        /// <param name="sign">签名</param>
+        /// <param name="beginTime">开始时间</param>
+        /// <param name="endTime">结束时间</param>
+        /// <param name="offset">位移（偏移量）</param>
+        /// <param name="optionalParams">可选配置参数</param>
+        public void BatchQueryOrderComment(string nonceStr, string sign, DateTime beginTime, DateTime endTime, int offset = 0, BatchQueryOrderCommentParams optionalParams = null)
         {
 
         }
