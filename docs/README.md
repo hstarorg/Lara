@@ -13,11 +13,11 @@ Major.Minor.Build.Revision
 
 ## Features
 
-* Hstar.Lara.Cache
-* Hstar.Lara.Data
-* Hstar.Lara.DI
-* Hstar.Lara.Mail
-* Hstar.Lara.Pay
-* Hstar.Lara.Swagger
-* Hstar.Lara.Utilities
-* Hstar.Lara.WebAPI.Extensions
+* Hstar.Lara.Cache (netstandard2.0)
+* Hstar.Lara.Data (netstandard2.0)
+* Hstar.Lara.DI (netcoreapp2.1)
+* Hstar.Lara.Mail (netstandard2.0)
+* Hstar.Lara.Pay (netstandard2.0)
+* Hstar.Lara.Swagger (netcoreapp2.1)
+* Hstar.Lara.Utilities (netstandard2.0)
+* Hstar.Lara.WebAPI.Extensions (netcoreapp2.1)
