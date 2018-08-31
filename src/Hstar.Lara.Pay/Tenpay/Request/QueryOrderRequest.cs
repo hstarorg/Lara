@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Hstar.Lara.Pay.Tenpay.Request
+﻿namespace Hstar.Lara.Pay.Tenpay.Request
 {
     public class QueryOrderRequest : BaseWechatRequest
     {

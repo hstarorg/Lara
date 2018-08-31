@@ -8,7 +8,7 @@ namespace Hstar.Lara.Pay.Tenpay
     {
         private readonly WechatPaySettings settings;
 
-        const string WechatPayApiHost = "https://api.mch.weixin.qq.com";
+        private const string WechatPayApiHost = "https://api.mch.weixin.qq.com";
 
         /// <summary>
         /// 构造函数
@@ -29,6 +29,7 @@ namespace Hstar.Lara.Pay.Tenpay
                 NotifyUrl = notifyUrl
             };
         }
+
         /// <summary>
         /// 统一下单
         /// 接口链接：https://api.mch.weixin.qq.com/pay/unifiedorder
@@ -44,7 +45,6 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="optionalParams">可选的支付参数</param>
         public void Unifiedorder(string sign, string body, string outTradeNO, int totalFee, string spbillCreateIP, WechatTradeType tradeType, UnifiedorderParams optionalParams = null)
         {
-
         }
 
         /// <summary>
@@ -72,7 +72,6 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="optionalParams">可选配置参数</param>
         public void CloseOrder(string nonceStr, string sign, string outTradeNO, CloseOrderParams optionalParams = null)
         {
-
         }
 
         /// <summary>
@@ -88,7 +87,6 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="optionalParams">可选配置参数</param>
         public void QueryRefund(string nonceStr, string sign, OrderNumberType orderNumberType, string orderNumber, QueryRefundParams optionalParams = null)
         {
-
         }
 
         /// <summary>
@@ -104,7 +102,6 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="optionalParams">可选配置参数</param>
         public void DownloadBill(string nonceStr, string sign, DateTime billDate, WechatBillType billType = WechatBillType.ALL, DownloadBillParams optionalParams = null)
         {
-
         }
 
         /// <summary>
@@ -121,7 +118,6 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="optionalParams">可选配置参数</param>
         public void BatchQueryOrderComment(string nonceStr, string sign, DateTime beginTime, DateTime endTime, int offset = 0, BatchQueryOrderCommentParams optionalParams = null)
         {
-
         }
 
         /// <summary>
@@ -140,7 +136,6 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="optionalParams"></param>
         public void RefundOrder(string nonceStr, string sign, OrderNumberType orderNumberType, string orderNumber, string outRefundNo, int totalFee, int refundFee, RefundOrderParams optionalParams = null)
         {
-
         }
 
         /// <summary>
@@ -156,7 +151,6 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="optionalParams"></param>
         public void DownloadFundFlow(string nonceStr, string sign, DateTime billDate, WechatAccountType accountType, DownloadFundFlowParams optionalParams = null)
         {
-
         }
     }
 }

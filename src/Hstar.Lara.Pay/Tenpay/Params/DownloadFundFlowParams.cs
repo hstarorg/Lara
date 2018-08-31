@@ -2,7 +2,6 @@
 
 namespace Hstar.Lara.Pay.Tenpay.Params
 {
-
     public class DownloadFundFlowParams : BaseParams
     {
         public DownloadFundFlowParams()
