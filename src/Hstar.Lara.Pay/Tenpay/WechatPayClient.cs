@@ -108,6 +108,9 @@ namespace Hstar.Lara.Pay.Tenpay
 
         /// <summary>
         /// 拉取订单评价数据
+        /// 商户可以通过该接口拉取用户在微信支付交易记录中针对你的支付记录进行的评价内容
+        /// 接口链接：https://api.mch.weixin.qq.com/billcommentsp/batchquerycomment
+        /// 需要证书
         /// </summary>
         /// <param name="nonceStr">随机字符串，不长于32位。</param>
         /// <param name="sign">签名</param>
@@ -116,6 +119,41 @@ namespace Hstar.Lara.Pay.Tenpay
         /// <param name="offset">位移（偏移量）</param>
         /// <param name="optionalParams">可选配置参数</param>
         public void BatchQueryOrderComment(string nonceStr, string sign, DateTime beginTime, DateTime endTime, int offset = 0, BatchQueryOrderCommentParams optionalParams = null)
+        {
+
+        }
+
+        /// <summary>
+        /// 申请退款
+        /// 当交易发生之后一段时间内，由于买家或者卖家的原因需要退款时，卖家可以通过退款接口将支付款退还给买家，微信支付将在收到退款请求并且验证成功之后，按照退款规则将支付款按原路退到买家帐号上。
+        /// 接口链接：https://api.mch.weixin.qq.com/secapi/pay/refund
+        /// 请求需要双向证书
+        /// </summary>
+        /// <param name="nonceStr"></param>
+        /// <param name="sign"></param>
+        /// <param name="orderNumberType"></param>
+        /// <param name="orderNumber"></param>
+        /// <param name="outRefundNo"></param>
+        /// <param name="totalFee"></param>
+        /// <param name="refundFee"></param>
+        /// <param name="optionalParams"></param>
+        public void RefundOrder(string nonceStr, string sign, OrderNumberType orderNumberType, string orderNumber, string outRefundNo, int totalFee, int refundFee, RefundOrderParams optionalParams = null)
+        {
+
+        }
+
+        /// <summary>
+        /// 下载资金账单
+        /// 商户可以通过该接口下载自2017年6月1日起 的历史资金流水账单。
+        /// 接口链接：https://api.mch.weixin.qq.com/pay/downloadfundflow
+        /// 请求需要双向证书
+        /// </summary>
+        /// <param name="nonceStr"></param>
+        /// <param name="sign"></param>
+        /// <param name="billDate"></param>
+        /// <param name="accountType"></param>
+        /// <param name="optionalParams"></param>
+        public void DownloadFundFlow(string nonceStr, string sign, DateTime billDate, WechatAccountType accountType, DownloadFundFlowParams optionalParams = null)
         {
 
         }
