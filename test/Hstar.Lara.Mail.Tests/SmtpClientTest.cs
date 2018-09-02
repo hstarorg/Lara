@@ -8,7 +8,7 @@ namespace Hstar.Lara.Mail.Tests
         public void Test1()
         {
             var a = new Class1();
-            a.XXX();
+            //a.XXX();
         }
     }
 }
