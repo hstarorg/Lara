@@ -38,7 +38,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.Data", "src\Hsta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docs", "docs\docs.csproj", "{E6CE6FE5-F47D-4E4D-9CF0-7451CB783833}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hstar.Lara.Pay.Tests", "test\Hstar.Lara.Pay.Tests\Hstar.Lara.Pay.Tests.csproj", "{03860D3B-7880-4C7A-8222-A07BBED26458}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hstar.Lara.Pay.Tests", "test\Hstar.Lara.Pay.Tests\Hstar.Lara.Pay.Tests.csproj", "{03860D3B-7880-4C7A-8222-A07BBED26458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentDemo", "examples\PaymentDemo\PaymentDemo.csproj", "{0FA067D3-CFA2-49FB-A05F-7C62B8C92F0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -102,6 +104,10 @@ Global
 		{03860D3B-7880-4C7A-8222-A07BBED26458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03860D3B-7880-4C7A-8222-A07BBED26458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03860D3B-7880-4C7A-8222-A07BBED26458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA067D3-CFA2-49FB-A05F-7C62B8C92F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA067D3-CFA2-49FB-A05F-7C62B8C92F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA067D3-CFA2-49FB-A05F-7C62B8C92F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA067D3-CFA2-49FB-A05F-7C62B8C92F0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +119,7 @@ Global
 		{515DE749-B394-4700-BB96-101D4BD9BD36} = {7937493D-0A86-45E2-B223-43CD0C010F00}
 		{E6CE6FE5-F47D-4E4D-9CF0-7451CB783833} = {27D771A3-551E-4F38-AEC7-4E0AB1DD4A53}
 		{03860D3B-7880-4C7A-8222-A07BBED26458} = {7937493D-0A86-45E2-B223-43CD0C010F00}
+		{0FA067D3-CFA2-49FB-A05F-7C62B8C92F0D} = {A8160750-2AF5-42B0-B6E5-89E2908E1C93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {423C4D9C-1129-490B-9A29-67CCBC0A09E0}
