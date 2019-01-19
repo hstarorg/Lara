@@ -15,9 +15,9 @@ Major.Minor.Build.Revision
 
 * Lara.Cache (netstandard2.0)
 * Lara.Data (netstandard2.0)
-* Lara.DI (netcoreapp2.1)
+* Lara.DI (netcoreapp2.2)
 * Lara.Mail (netstandard2.0)
 * Lara.Pay (netstandard2.0)
-* Lara.Swagger (netcoreapp2.1)
+* Lara.Swagger (netstandard2.0)
 * Lara.Utilities (netstandard2.0)
-* Lara.WebAPI.Extensions (netcoreapp2.1)
+* Lara.WebAPI.Extensions (netcoreapp2.2)
