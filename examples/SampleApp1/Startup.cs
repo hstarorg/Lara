@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Hstar.Lara.DI;
+﻿using Lara.DI;
+using Lara.Swagger;
+using Lara.WebAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Hstar.Lara.Swagger;
-using Hstar.Lara.WebAPI.Extensions;
 using SampleApp1.Models;
+using System;
 
 namespace SampleApp1
 {
@@ -37,18 +35,21 @@ namespace SampleApp1
             //{
             //    app.UseDeveloperExceptionPage();
             //}
+            var corsPolicy = new Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy();
+            corsPolicy.Origins.Add("*");
             app.UseSimpleExceptionHandler(env, exHandlerPathFeature =>
             {
                 if (exHandlerPathFeature.Error is BusinessException bizEx)
                 {
-                    return new ObjectResult(new {
+                    return new ObjectResult(new
+                    {
                         StatusCode = bizEx.StatusCode,
                         bizEx.Message,
                         StackTrace = env.IsDevelopment() ? bizEx.StackTrace : null
                     });
                 }
                 return null;
-            });
+            }, corsPolicy);
 
             app.UseCors(c => c.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader().AllowCredentials());
             app.UseSwaggerAndUI();

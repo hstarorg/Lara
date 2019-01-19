@@ -1,7 +1,4 @@
-﻿using Hstar.Lara.DI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Lara.DI;
 using System.Threading.Tasks;
 
 namespace SampleApp1.Business.Implement

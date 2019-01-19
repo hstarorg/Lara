@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -21,9 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Hstar.Lara.DI\Hstar.Lara.DI.csproj" />
-    <ProjectReference Include="..\..\src\Hstar.Lara.Swagger\Hstar.Lara.Swagger.csproj" />
-    <ProjectReference Include="..\..\src\Hstar.Lara.WebAPI.Extensions\Hstar.Lara.WebAPI.Extensions.csproj" />
+    <ProjectReference Include="..\..\src\Lara.DI\Lara.DI.csproj" />
+    <ProjectReference Include="..\..\src\Lara.Swagger\Lara.Swagger.csproj" />
+    <ProjectReference Include="..\..\src\Lara.WebAPI.Extensions\Lara.WebAPI.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

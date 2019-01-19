@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SampleApp1.Business;
 using SampleApp1.Models;
+using System;
+using System.Threading.Tasks;
 
 namespace SampleApp1.Controllers
 {
@@ -36,7 +34,6 @@ namespace SampleApp1.Controllers
         [HttpGet, Route("error")]
         public async Task<object> TestError()
         {
-
             var isEven = new Random().Next(0, 10) % 2 == 0;
             if (isEven)
             {

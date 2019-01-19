@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Company>HstarStudio</Company>
+    <Product>Lara</Product>
+    <Authors>hstarorg</Authors>
+    <Description>The cacha lib in Lara framework.</Description>
+    <Copyright>HstarStudio</Copyright>
+    <PackageProjectUrl>https://github.com/hstarorg/Lara</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/hstarorg/Lara</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseUrl>https://github.com/hstarorg/Lara/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>Lara,Cache</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
