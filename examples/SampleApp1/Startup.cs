@@ -1,6 +1,6 @@
-﻿using Hstar.Lara.DI;
-using Hstar.Lara.Swagger;
-using Hstar.Lara.WebAPI.Extensions;
+﻿using Lara.DI;
+using Lara.Swagger;
+using Lara.WebAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

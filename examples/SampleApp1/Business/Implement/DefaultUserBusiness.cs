@@ -1,4 +1,4 @@
-﻿using Hstar.Lara.DI;
+﻿using Lara.DI;
 using System.Threading.Tasks;
 
 namespace SampleApp1.Business.Implement
